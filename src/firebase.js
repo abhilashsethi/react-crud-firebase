@@ -1,13 +1,16 @@
-import firebase from "firebase/app";
-import "firebase/database";
+// import firebase from "firebase/app";
+// import "firebase/database";
+import firebase from "firebase/compat/app";
+// import "firebase/compat/auth";
+import "firebase/compat/database";
 
-var firebaseConfig = {
-	apiKey: "AIzaSyDSrn6az4TwsFUw2wRAef5LvWfZTYiH2us",
-	authDomain: "react-contact-73281.firebaseapp.com",
-	projectId: "react-contact-73281",
-	storageBucket: "react-contact-73281.appspot.com",
-	messagingSenderId: "1013996419970",
-	appId: "1:1013996419970:web:532d5f459c20704ca12d9b",
+const firebaseConfig = {
+	apiKey: "AIzaSyDYKD24JSj9SykOnFi5oA1aaqYDD9ysBIE",
+	authDomain: "react-contact-4d7a1.firebaseapp.com",
+	projectId: "react-contact-4d7a1",
+	storageBucket: "react-contact-4d7a1.appspot.com",
+	messagingSenderId: "688519965407",
+	appId: "1:688519965407:web:2f85e31fee0fcb562b976a",
 };
 const fireDb = firebase.initializeApp(firebaseConfig);
 export default fireDb.database().ref();
